@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game</title>
+    <link rel="shortcut icon" href="images/tab.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+</head>
+
+<body>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <div id="rotate-device">
+        <div class="rotate-content">
+            <span style="font-size: 50px;">🔄</span>
+            <p>برای تجربه بهتر، لطفاً گوشی خود را به حالت افقی (Landscape) بچرخانید.</p>
+        </div>
+    </div>
+
+
+    <header class="header">
+
+        <div class="container">
+
+            <section class="head">
+
+                <div class="right">
+
+                    <h2 class="title">🐷 PIG GAME</h2>
+
+                </div>
+
+                <div class="left">
+
+                    <button class="new-game" id="new">🔄 NEW GAME</button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <section class="sec-players">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="player-box">
+
+                        <div class="profile">
+                            <img src="images/profile1.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <strong class="name">Billy</strong>
+                            <span class="score" id="score-billy">0</span>
+                            <p class="description blue">🔵 Blue</p>
+                        </div>
+
+                    </div>
+
+                    <div class="player-box">
+
+                        <div class="profile">
+                            <img src="images/profile2.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <strong class="name">Ben</strong>
+                            <span class="score" id="score-ben">0</span>
+                            <p class="description Orange">🟠 Orange</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="sec-dice">
+
+            <div class="container">
+
+                <div class="dice" id="dice"></div>
+
+                <div class="desc">
+                    <span class="description">Currunt Turn Score:</span>
+                    <strong>19</strong>
+                    <h3>🎲 Rolled <span>4</span></h3>
+                </div>
+
+                <div class="btns">
+                    <button class="roll" id="roll">🎲 ROLLDICE</button>
+                    <button class="hold" id="hold">✋🏼 HOLD</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <div id="custom-alert" class="custom-alert hidden">
+        <div class="alert-content">
+            <p>💥Boom<br> .You busted 70+—score cap triggered. This round’s points just got nuked</p>
+            <button id="close-alert">.Got it</button>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+
+
+
+    </script>
+</body>
+
+
+
+</html>
