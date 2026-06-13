@@ -7,6 +7,12 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   overflow: auto;
+  background-attachment: scroll;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
 }
 
 /*------------- Confetti Canvas ------------------*/
