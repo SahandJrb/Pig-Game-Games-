@@ -1,18 +1,41 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../images/Background-desktop.png");
+  /* background-image: url("../images/Background-desktop.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   min-height: 100vh;
   overflow: auto;
-  background-attachment: scroll;
-  min-height: -webkit-fill-available;
+  /* background-attachment: scroll;
+  min-height: -webkit-fill-available; */
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation; /* جلوی double-tap zoom رو میگیره */
+  outline: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
   height: -webkit-fill-available;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Background-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 
 /*------------- Confetti Canvas ------------------*/
@@ -184,6 +207,7 @@ html {
   justify-content: center;
   flex-direction: column;
   position: relative;
+  gap: 20px;
 }
 
 /*--------------- Dice -----------------*/
@@ -203,10 +227,11 @@ html {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   padding: 15px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   transition: transform 0.3s ease-in-out;
-  position: absolute;
-  top: -185px;
+  /* position: absolute;
+  top: -185px; */
+  order: -1;
 }
 
 .dot {
